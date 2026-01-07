@@ -9,6 +9,7 @@ const PROVIDER_API_KEY_MAP: Record<string, string> = {
   'openai': 'OPENAI_API_KEY',
   'anthropic': 'ANTHROPIC_API_KEY',
   'google': 'GOOGLE_API_KEY',
+  'groq': 'GROQ_API_KEY',
 };
 
 // Map model IDs to their required API key environment variable names (for backwards compatibility)
@@ -23,6 +24,7 @@ const PROVIDER_DISPLAY_NAMES: Record<string, string> = {
   'openai': 'OpenAI',
   'anthropic': 'Anthropic',
   'google': 'Google',
+  'groq': 'Groq',
 };
 
 export function getApiKeyNameForProvider(providerId: string): string | undefined {
