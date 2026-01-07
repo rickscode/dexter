@@ -28,6 +28,12 @@ const PROVIDERS: Provider[] = [
     modelId: 'gemini-3-pro-preview',
     description: "Gemini 3 - Google's most intelligent model",
   },
+  {
+    displayName: 'Groq',
+    providerId: 'groq',
+    modelId: 'groq/compound',
+    description: "Compound - Ultra-fast inference with 70K TPM",
+  },
 ];
 
 export function getModelIdForProvider(providerId: string): string | undefined {
